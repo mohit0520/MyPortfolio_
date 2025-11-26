@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohit Soni | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="App.css" />
+</head>
+<body>
+  <!-- Animated Infinity Background -->
+  <canvas id="bg"></canvas>
+
+  <!-- Content -->
+  <div class="content">
+    <!-- HEADER -->
+    <header>
+      <h1 class="logo"> Mohit Soni</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+      <h2>Hi, I'm <span>Mohit Soni</span> 👋</h2>
+       <p class="lead mb-4">
+        I'm a <span id="typed-text" class="typed-text"></span>
+      </p>
+      <a href="Mohit_Soni_s_CV (2).pdf.pdf" download class="btn btn-primary btn-lg btn-cv">
+        <i class="bi bi-download"></i> Download CV
+      </a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p >
+      I'm a Computer Science graduate student with a deep interest in DevOps practices and Cloud infrastructure .
+       I have hands-on Experience withtools like Docker , Git , Jenkins and AWS . 
+       I'm passionate about automation , continous integration and improving system reliablitiy through smart engineering.
+      </p>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">Docker</div>
+        <div class="skill">Kubernetes</div>
+        <div class="skill">AWS</div>
+        <div class="skill">Terraform</div>
+        <div class="skill">Jenkins</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Linux</div>
+        <div class="skill">Python</div>
+        <div class="skill">Tomcat</div>
+        <div class="skill">Sonarqube</div>
+        <div class="skill">Nexus</div>
+         <div class="skill">Maven</div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>CI/CD Pipeline Automation</h3>
+          <p> Developed and implemented a CI/CD pipeline to automate code build and deployment for a sample
+ web application . </p>
+          <a href="#" class="btn btn-outline-primary">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3> Cloud Infrastructure Setup Using Terraform</h3>
+          <p> Automated the provisioning of AWS infrastructure using Terraform scripts for a scalable and repeatable
+ setup . </p>
+          <a href="#" class="btn btn-outline-primary">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3> End-to-End DevOps Pipeline for a Web App</h3>
+          <p> Built a complete CI/CD pipeline to automate the build, test, and deployment of a web application.</p>
+          <a href="#" class="btn btn-outline-primary">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Education</h2>
+      <div class="card  border-0 p-4 mb-3">
+        <div class="project-cards">
+          <h5><i class="bi bi-mortarboard"></i> B.Tech in Computer Science Engineering</h5>
+          <p>Kurukshetra University  | 2021 - 2025</p>
+        </div>
+      </div>
+      <div class="card  border-0 p-4 mb-3">
+        <div class="project-cards">
+          <h5><i class="bi bi-mortarboard"></i> Diploma in Mechanical Engineering</h5>
+          <p>Govt. polytechnic Ambala City , Ambala | 2019 - 2021</p>
+        </div>
+      </div>
+      <div class="card border-0 p-4">
+        <div class="project-cards">
+          <h5><i class="bi bi-award"></i> Certifications</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-check-circle text-success"></i>Docker Essentials: A Developer Introduction</li>
+            <li><i class="bi bi-check-circle text-success"></i>Containers & Kubernetes Essentials</li>
+            <li><i class="bi bi-check-circle text-success"></i>Cloud Essentials</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+   
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="socials">
+         <p>© 2025 Mohit Soni | All Rights reserved</p>
+        <a href="https://www.linkedin.com/in/mohit-soni-887bb1229/"><i class="bi bi-linkedin"></i>LinkedIn</a>
+        <a href="https://github.com/mohit0520"><i class="bi bi-github"></i>GitHub</a>
+        <a href="mailto:gautampatwal1607@gmail.com">
+          <i class="bi bi-envelope"></i> Email
+        </a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="App.js"></script>
+</body>
+</html>
