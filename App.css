@@ -45,7 +45,11 @@ header {
   font-weight: 600;
   text-shadow: 0 0 15px #00d2ff70;
 }
-
+/* Desktop Menu */
+nav {
+  display: flex;
+  gap: 20px;
+}
 nav a {
   color: #cfefff;
   margin-left: 20px;
@@ -53,6 +57,44 @@ nav a {
   transition: color 0.3s;
 }
 nav a:hover { color: #00d2ff; }
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #00d2ff;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #00d2ff80;
+}
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(15px);
+    width: 200px;
+    display: none;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
 
 /* HERO SECTION */
 .hero {
@@ -170,6 +212,28 @@ nav a:hover { color: #00d2ff; }
 .projects-cards:hover {
   transform: translateY(-5px);
   background: rgba(0,210,255,0.15);
+}
+
+/* CONTACT */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  outline: none;
+}
+#contact input:focus, #contact textarea:focus {
+  border: 1px solid #00d2ff;
 }
 
 /* FOOTER */
